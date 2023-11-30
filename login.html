@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content/>
+    <meta name="author" content/>
+    <title>로그인</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body class="d-flex flex-column">
+<main class="flex-shrink-0">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="main.html">타슈</a>
+            <img src="images/자전거.png" height="50">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page content-->
+    <section class="py-5">
+        <div class="container px-5">
+            <!-- Contact form-->
+            <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
+                    </div>
+                    <h1 class="fw-bolder">로그인</h1>
+                    <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <form id="loginForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputId" type="text" placeholder="아이디 입력"
+                                       data-sb-validations="required"/>
+                                <label for="inputId">아이디 입력</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">가입되지않은 아이디 입니다.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputPw" type="password" placeholder="비밀번호 입력"
+                                       data-sb-validations="required,email"/>
+                                <label for="inputPw">비밀번호 입력</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">비밀번호를 틀렸습니다.</div>
+                            </div>
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br/>
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+                            <!-- 로그인 Button-->
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-primary btn-lg " id="loginButton" type="submit">로그인
+                                </button>
+                            </div>
+                            <!-- 회원가입 Button 여백 주기-->
+                            <div class="d-grid ">
+                                <button class="btn btn-primary btn-lg" id="signupButton" type="submit">회원가입
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact cards-->
+            <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                            class="bi bi-chat-dots"></i></div>
+                    <div class="h5 mb-2">Chat with us</div>
+                    <p class="text-muted mb-0">Chat live with one of our support specialists.</p>
+                </div>
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-people"></i>
+                    </div>
+                    <div class="h5">Ask the community</div>
+                    <p class="text-muted mb-0">Explore our community forums and communicate with other users.</p>
+                </div>
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                            class="bi bi-question-circle"></i></div>
+                    <div class="h5">Support center</div>
+                    <p class="text-muted mb-0">Browse FAQ's and support articles to find solutions.</p>
+                </div>
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                            class="bi bi-telephone"></i></div>
+                    <div class="h5">Call us</div>
+                    <p class="text-muted mb-0">Call us during normal business hours at (555) 892-9403.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">Copyright &copy; Your Website 2023</div>
+            </div>
+            <div class="col-auto">
+                <a class="link-light small" href="#!">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Terms</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const login = document.getElementById("loginForm")
+    const loginBtn = document.querySelector("#loginButton")
+    const signupBtn = document.querySelector("#signupButton")
+
+    loginBtn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+
+        login.submit();
+        // 사용자가 입력한 아이디와 비밀번호
+        const textId = document.querySelector("#inputId").value;
+        const textPw = document.querySelector("#inputPw").value;
+
+        // 로컬스토리지에 저장된 아이디와 비밀번호
+        const storageId = localStorage.getItem('inputId')
+        const storagePw = localStorage.getItem('inputPw')
+        const storageName = localStorage.getItem('inputName')
+
+        // 사용자 정보 객체 생성
+        let userInfo = {id :storageId, pw: storagePw , name: storageName };
+
+        // 사용자 정보 로컬스토리지에 저장(문자열이기 때문에 json으로 불러오기)
+        sessionStorage.setItem('user', JSON.stringify(userInfo));
+
+        // 아이디 비밀번호와 일치여부 확인
+        if (textId === storageId && textPw === storagePw) {
+            alert("로그인 성공")
+            window.location.href = "main.html"
+        } else {
+            alert("로그인 실패.아이디 혹은 비밀번호가 일치하지않습니다.")
+        }
+
+    });
+
+    signupBtn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+
+        window.location.href = "signUp.html"
+    });
+</script>
+</body>
+</html>
